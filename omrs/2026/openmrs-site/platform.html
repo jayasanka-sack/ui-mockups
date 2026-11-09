@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenMRS platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;family=Fraunces:opsz,wght,SOFT@9..144,300..600,0..100&amp;display=swap">
+<style>
+body{margin:0;min-height:100vh;background:#FBFBF9;color:#161616;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#005D5D}a:hover{color:#003F3F}
+*{box-sizing:border-box}
+h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
+</style>
+</head>
+<body>
+<div style="width: 100%; background: #FBFBF9; color: #161616; font-family: 'IBM Plex Sans', system-ui, sans-serif">
+
+<!-- NAV -->
+<header style="border-bottom: 1px solid #E2E0DA; background: #FBFBF9">
+<nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #161616">
+<img src="assets/2b52ae078be954fe4d80fdd0c72e3234.webp" alt="OpenMRS — Medical Record System" style="height: 40px; width: auto; display: block">
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 26px; font-size: 15px">
+<a href="platform.html" aria-current="page" style="color: #161616; text-decoration: none; font-weight: 600; border-bottom: 2px solid #F26522; padding-bottom: 2px">Platform</a>
+<a href="built-on-openmrs.html" style="color: #161616; text-decoration: none">Built on OpenMRS</a>
+<a href="implementers.html" style="color: #161616; text-decoration: none">For implementers</a>
+<a href="community.html" style="color: #161616; text-decoration: none">Community</a>
+<a href="academy.html" style="color: #161616; text-decoration: none">Academy</a>
+<a href="about.html" style="color: #161616; text-decoration: none">About</a>
+<a href="https://o3-docs.openmrs.org" style="color: #161616; text-decoration: none; padding: 11px 16px; border-radius: 4px; border: 1px solid #161616; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center">Docs</a>
+<a href="/demo" style="background: #005D5D; color: #FFFFFF; text-decoration: none; padding: 11px 18px; border-radius: 4px; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center">Try the demo</a>
+</div>
+</nav>
+<!-- section nav -->
+<div style="border-top: 1px solid #E2E0DA; background: #F7F6F1">
+<nav aria-label="Platform" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 28px; font-size: 14px">
+<a href="/platform" aria-current="page" style="color: #161616; text-decoration: none; font-weight: 600; padding: 14px 0; border-bottom: 2px solid #161616; min-height: 44px; display: inline-flex; align-items: center">Overview</a>
+<a href="get.html" style="color: #2E2E2B; text-decoration: none; padding: 14px 0; min-height: 44px; display: inline-flex; align-items: center">Get OpenMRS</a>
+<a href="/releases" style="color: #2E2E2B; text-decoration: none; padding: 14px 0; min-height: 44px; display: inline-flex; align-items: center">Releases</a>
+<a href="/trust" style="color: #2E2E2B; text-decoration: none; padding: 14px 0; min-height: 44px; display: inline-flex; align-items: center">Security &amp; trust</a>
+<a href="/standards" style="color: #2E2E2B; text-decoration: none; padding: 14px 0; min-height: 44px; display: inline-flex; align-items: center">Standards &amp; interoperability</a>
+</nav>
+</div>
+</header>
+
+<!-- INTRO -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 64px">
+<p style="margin: 0 0 24px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A46">The platform</p>
+<h1 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1.04; letter-spacing: -0.02em; max-width: 14em">A clinical data platform and a modern EMR, in one project.</h1>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<p style="flex: 1 1 520px; min-width: 0; margin: 0; font-size: 21px; line-height: 1.5; color: #2E2E2B; max-width: 34em">OpenMRS stores patient records in a structured, standards-based database and gives health workers a web application to use them: OpenMRS 3, or O3. You configure it for your clinic or country rather than writing a system from scratch, and you can extend it with your own apps, forms and modules without changing the core.</p>
+<dl style="flex: 1 1 320px; min-width: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; padding: 24px; border: 1px solid #E2E0DA; border-radius: 4px">
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46">Current release</dt><dd style="margin: 6px 0 0; font-family: 'Fraunces', Georgia, serif; font-size: 28px; line-height: 1">O3 3.8.0</dd></div>
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46">Platform core</dt><dd style="margin: 6px 0 0; font-family: 'Fraunces', Georgia, serif; font-size: 28px; line-height: 1">2.8.10</dd></div>
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46">Licence</dt><dd style="margin: 6px 0 0; font-size: 15px; line-height: 1.4">MPL 2.0 with Healthcare Disclaimer. No licence fees.</dd></div>
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46">Standards</dt><dd style="margin: 6px 0 0; font-size: 15px; line-height: 1.4">FHIR R4 · REST · CIEL terminology</dd></div>
+</dl>
+</div>
+<div style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 14px">
+<a href="/demo" style="background: #005D5D; color: #FFFFFF; text-decoration: none; padding: 15px 24px; border-radius: 4px; font-weight: 600; font-size: 16px; min-height: 48px; display: inline-flex; align-items: center; gap: 10px">Try the demo
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+<a href="get.html" style="background: transparent; color: #161616; text-decoration: none; padding: 14px 23px; border-radius: 4px; border: 1px solid #161616; font-weight: 500; font-size: 16px; min-height: 48px; display: inline-flex; align-items: center">Run it yourself</a>
+</div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section style="background: #0E2A2A; color: #EEF2F1">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end; justify-content: space-between">
+<div style="flex: 1 1 520px; min-width: 0">
+<p style="margin: 0 0 20px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #9FC4C1">OpenMRS 3 · what health workers see</p>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 48px; line-height: 1.05; letter-spacing: -0.015em">Built for a busy clinic.</h2>
+</div>
+<p style="flex: 1 1 340px; margin: 0; font-size: 18px; line-height: 1.55; color: #C9D7D5">Patient chart, forms, queues, appointments, lab and pharmacy workflows. Offline-tolerant, translatable, and the same on a laptop or a national server.</p>
+</div>
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+<figure style="margin: 0; grid-column: 1 / -1; border: 1px solid #2C4A49; border-radius: 6px; overflow: hidden; background: #132F2F">
+<div style="height: 36px; border-bottom: 1px solid #2C4A49; display: flex; align-items: center; gap: 8px; padding: 0 14px">
+<span style="width: 10px; height: 10px; border-radius: 50%; background: #2C4A49"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #2C4A49"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #2C4A49"></span>
+</div>
+<div style="height: 520px; display: flex; align-items: center; justify-content: center; padding: 24px; text-align: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #9FC4C1; line-height: 1.6">[O3 SCREENSHOT — patient chart on demo data: visit, vitals, conditions, orders. Compressed WebP.]</span></div>
+<figcaption style="padding: 12px 16px; border-top: 1px solid #2C4A49; font-size: 14px; color: #C9D7D5">Patient chart — one place for visits, vitals, conditions, medications and results.</figcaption>
+</figure>
+<figure style="margin: 0; border: 1px solid #2C4A49; border-radius: 6px; overflow: hidden; background: #132F2F">
+<div style="height: 220px; display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9FC4C1">[SCREENSHOT — a clinical form]</span></div>
+<figcaption style="padding: 12px 16px; border-top: 1px solid #2C4A49; font-size: 14px; color: #C9D7D5">Forms — built in the Form Builder, no code.</figcaption>
+</figure>
+<figure style="margin: 0; border: 1px solid #2C4A49; border-radius: 6px; overflow: hidden; background: #132F2F">
+<div style="height: 220px; display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9FC4C1">[SCREENSHOT — service queues]</span></div>
+<figcaption style="padding: 12px 16px; border-top: 1px solid #2C4A49; font-size: 14px; color: #C9D7D5">Queues — who is waiting, where, for how long.</figcaption>
+</figure>
+<figure style="margin: 0; border: 1px solid #2C4A49; border-radius: 6px; overflow: hidden; background: #132F2F">
+<div style="height: 220px; display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9FC4C1">[SCREENSHOT — appointments]</span></div>
+<figcaption style="padding: 12px 16px; border-top: 1px solid #2C4A49; font-size: 14px; color: #C9D7D5">Appointments — scheduling and follow-up per service.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<!-- WHAT'S IN THE BOX -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 104px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end; justify-content: space-between">
+<div style="flex: 1 1 520px; min-width: 0">
+<p style="margin: 0 0 20px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A46">What's in the box</p>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 48px; line-height: 1.05; letter-spacing: -0.015em">Four parts, one project.</h2>
+</div>
+<p style="flex: 1 1 340px; margin: 0; font-size: 18px; line-height: 1.55; color: #2E2E2B">Most people run the Reference Application and never think about the layers. Builders and integrators will want to know what sits where.</p>
+</div>
+
+<!-- layer diagram -->
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px">
+<div style="border: 1px solid #161616; border-radius: 4px; padding: 24px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #B4430C">01 · WHAT YOU DEPLOY</p>
+<h3 style="margin: 0; font-size: 22px; font-weight: 600">Reference Application</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">The assembled, ready-to-run distribution: core, frontend, standard modules and starter content, shipped as Docker images and a standalone zip. Current version 3.8.0.</p>
+</div>
+<div style="border: 1px solid #161616; border-radius: 4px; padding: 24px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #B4430C">02 · WHAT USERS SEE</p>
+<h3 style="margin: 0; font-size: 22px; font-weight: 600">O3 frontend</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">A set of React microfrontend apps: registration, chart, forms, orders, queues, appointments, admin. Add your own app without touching the others. esm-core 11.0.0.</p>
+</div>
+<div style="border: 1px solid #161616; border-radius: 4px; padding: 24px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #B4430C">03 · WHAT HOLDS THE DATA</p>
+<h3 style="margin: 0; font-size: 22px; font-weight: 600">Platform core</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">The Java data model, services and APIs that every distribution shares: patients, encounters, observations, orders, concepts. MariaDB or MySQL underneath. Version 2.8.10, patched monthly.</p>
+</div>
+<div style="border: 1px solid #161616; border-radius: 4px; padding: 24px; background: #FFFFFF; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #B4430C">04 · WHAT MAKES IT YOURS</p>
+<h3 style="margin: 0; font-size: 22px; font-weight: 600">Modules &amp; content</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Backend modules (FHIR2 4.3.0, REST 3.6.0, and hundreds more) plus content packages: forms, concepts, locations, report definitions. Your own can be public or private.</p>
+</div>
+</div>
+</section>
+
+<!-- HOW YOU EXTEND IT -->
+<section style="background: #F1EFE9; border-top: 1px solid #E2E0DA; border-bottom: 1px solid #E2E0DA">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end; justify-content: space-between">
+<div style="flex: 1 1 520px; min-width: 0">
+<p style="margin: 0 0 20px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A46">How you extend it</p>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 48px; line-height: 1.05; letter-spacing: -0.015em">Change what you need. Keep the core.</h2>
+</div>
+<p style="flex: 1 1 340px; margin: 0; font-size: 18px; line-height: 1.55; color: #2E2E2B">Five layers of customisation, from a settings page to your own application. Start at the top; most deployments never reach the bottom.</p>
+</div>
+
+<ol style="list-style: none; margin: 48px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0; border-top: 1px solid #161616">
+<li style="padding: 28px 24px 8px 0; border-right: 1px solid #CFCCC3">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C">01 · No code</p>
+<h3 style="margin: 16px 0 0; font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 26px">Configure</h3>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Locations, identifiers, visit types, roles, languages, branding. Settings and JSON config, no build step.</p>
+</li>
+<li style="padding: 28px 24px 8px 24px; border-right: 1px solid #CFCCC3">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C">02 · No code</p>
+<h3 style="margin: 16px 0 0; font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 26px">Build forms</h3>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Design clinical forms in the Form Builder, with skip logic, calculations and validation. Publish without a deploy.</p>
+</li>
+<li style="padding: 28px 24px 8px 24px; border-right: 1px solid #CFCCC3">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C">03 · Content</p>
+<h3 style="margin: 16px 0 0; font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 26px">Manage content</h3>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Concepts from CIEL or your own dictionary via Open Concept Lab; programs, order sets, reports. Versioned and shareable.</p>
+</li>
+<li style="padding: 28px 24px 8px 24px; border-right: 1px solid #CFCCC3">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C">04 · Java</p>
+<h3 style="margin: 16px 0 0; font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 26px">Write modules</h3>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Add services, data types, integrations or scheduled jobs as a module that plugs into the core API.</p>
+</li>
+<li style="padding: 28px 0 8px 24px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C">05 · React</p>
+<h3 style="margin: 16px 0 0; font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 26px">Add frontend apps</h3>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Ship your own microfrontend into the O3 shell: a new page, a widget on the chart, a whole workflow.</p>
+</li>
+</ol>
+
+<div style="margin-top: 48px; padding: 24px 28px; border: 1px solid #CFCCC3; border-radius: 4px; display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: center; justify-content: space-between">
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2E2E2B; max-width: 52em"><strong style="font-weight: 600">Why not fork the core?</strong> Because a fork stops receiving upgrades, security fixes and new apps the day you make it. Everything above is designed so you never have to. If the core is missing something you need, bring it upstream and every country gets it.</p>
+<a href="https://o3-docs.openmrs.org" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; white-space: nowrap">Developer docs →</a>
+</div>
+</div>
+</section>
+
+<!-- STANDARDS STRIP -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end; justify-content: space-between">
+<div style="flex: 1 1 520px; min-width: 0">
+<p style="margin: 0 0 20px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A46">Standards built in</p>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 48px; line-height: 1.05; letter-spacing: -0.015em">Speaks the languages your other systems speak.</h2>
+</div>
+<a href="/standards" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Standards &amp; interoperability →</a>
+</div>
+<div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: #E2E0DA; border: 1px solid #E2E0DA">
+<div style="background: #FBFBF9; padding: 28px 24px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A4A46">FHIR R4</p>
+<h3 style="margin: 12px 0 0; font-size: 19px; font-weight: 600">A public Implementation Guide</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Patients, encounters, observations, medications and more as FHIR resources, through the fhir2 module.</p>
+</div>
+<div style="background: #FBFBF9; padding: 28px 24px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A4A46">REST</p>
+<h3 style="margin: 12px 0 0; font-size: 19px; font-weight: 600">The full data model, over HTTP</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">The API the O3 frontend itself uses. Everything you can do in the UI you can do from a script.</p>
+</div>
+<div style="background: #FBFBF9; padding: 28px 24px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A4A46">TERMINOLOGY</p>
+<h3 style="margin: 12px 0 0; font-size: 19px; font-weight: 600">CIEL, mapped to the big ones</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">An expert-maintained dictionary mapped to ICD-10, SNOMED CT, LOINC, RxNorm and CVX. CC-BY-4.0.</p>
+</div>
+<div style="background: #FBFBF9; padding: 28px 24px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A4A46">ARCHITECTURE</p>
+<h3 style="margin: 12px 0 0; font-size: 19px; font-weight: 600">Fits an OpenHIE exchange</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Used as the point-of-care system alongside client registries, shared health records and lab systems.</p>
+</div>
+</div>
+</section>
+
+<!-- DEPLOYMENT -->
+<section style="background: #0E2A2A; color: #EEF2F1">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end; justify-content: space-between">
+<div style="flex: 1 1 520px; min-width: 0">
+<p style="margin: 0 0 20px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #9FC4C1">Where it runs</p>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 48px; line-height: 1.05; letter-spacing: -0.015em">A laptop, a server, or a national cloud.</h2>
+</div>
+<a href="get.html" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; color: #EEF2F1">All options on Get OpenMRS →</a>
+</div>
+<div style="margin-top: 48px; display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<pre style="margin: 0; background: #071A1A; border: 1px solid #2C4A49; border-radius: 6px; padding: 24px; overflow-x: auto; font-family: 'IBM Plex Mono', monospace; font-size: 14px; line-height: 1.8; color: #D8E6E4"><span style="color: #6E9A97">$</span> git clone https://github.com/openmrs/openmrs-distro-referenceapplication
+<span style="color: #6E9A97">$</span> cd openmrs-distro-referenceapplication
+<span style="color: #6E9A97">$</span> docker compose up</pre>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #C9D7D5">Docker is the recommended path for every size of deployment. No Docker? There's a <a href="get.html" style="color: #EEF2F1">standalone zip</a> with the database embedded (Java 17+).</p>
+</div>
+<dl style="flex: 1 1 380px; min-width: 0; margin: 0; border: 1px solid #2C4A49; border-radius: 6px; padding: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; align-content: start">
+<div style="grid-column: 1 / -1"><p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #9FC4C1">Production minimums</p></div>
+<div><dt style="font-size: 13px; color: #9FC4C1">CPU</dt><dd style="margin: 4px 0 0; font-size: 16px; color: #EEF2F1">4 cores (8+ recommended)</dd></div>
+<div><dt style="font-size: 13px; color: #9FC4C1">Memory</dt><dd style="margin: 4px 0 0; font-size: 16px; color: #EEF2F1">8 GB (16+ recommended)</dd></div>
+<div><dt style="font-size: 13px; color: #9FC4C1">Storage</dt><dd style="margin: 4px 0 0; font-size: 16px; color: #EEF2F1">100 GB+ SSD</dd></div>
+<div><dt style="font-size: 13px; color: #9FC4C1">Database</dt><dd style="margin: 4px 0 0; font-size: 16px; color: #EEF2F1">MariaDB 10.11+ or MySQL 8.0+</dd></div>
+<div><dt style="font-size: 13px; color: #9FC4C1">Runtime</dt><dd style="margin: 4px 0 0; font-size: 16px; color: #EEF2F1">Docker 20.10+, Compose 2.0+</dd></div>
+<div><dt style="font-size: 13px; color: #9FC4C1">Backend</dt><dd style="margin: 4px 0 0; font-size: 16px; color: #EEF2F1">Java 21 (in the image)</dd></div>
+<div style="grid-column: 1 / -1"><a href="get.html" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; color: #EEF2F1">Going to production guide →</a></div>
+</dl>
+</div>
+</div>
+</section>
+
+<!-- WHO BUILDS ON IT -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: baseline; justify-content: space-between">
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 36px">Who builds on it</h2>
+<a href="built-on-openmrs.html" style="font-weight: 500">All distributions and national systems →</a>
+</div>
+<p style="margin: 16px 0 0; font-size: 17px; line-height: 1.55; color: #2E2E2B; max-width: 44em">National systems in Kenya, Uganda and Cambodia run on OpenMRS 3. Distributions like Ozone HIS, Bahmni and PIH EMR package it with their own content and support. All of them share the core described on this page.</p>
+<div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px">
+<span style="border: 1px solid #161616; border-radius: 999px; padding: 10px 16px; font-size: 14px; font-weight: 500">KenyaEMR</span>
+<span style="border: 1px solid #161616; border-radius: 999px; padding: 10px 16px; font-size: 14px; font-weight: 500">UgandaEMR+</span>
+<span style="border: 1px solid #161616; border-radius: 999px; padding: 10px 16px; font-size: 14px; font-weight: 500">Cambodia national NCD EMR</span>
+<span style="border: 1px solid #161616; border-radius: 999px; padding: 10px 16px; font-size: 14px; font-weight: 500">Ozone HIS</span>
+<span style="border: 1px solid #161616; border-radius: 999px; padding: 10px 16px; font-size: 14px; font-weight: 500">Bahmni</span>
+<span style="border: 1px solid #161616; border-radius: 999px; padding: 10px 16px; font-size: 14px; font-weight: 500">PIH EMR</span>
+<span style="border: 1px dashed #4A4A46; border-radius: 999px; padding: 10px 16px; font-size: 14px; color: #4A4A46">and more</span>
+</div>
+</section>
+
+<!-- CTA BAND -->
+<section style="background: #F26522; color: #161616">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 560px; min-width: 0">
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 40px; line-height: 1.12; letter-spacing: -0.01em">See it in seconds. Run it in minutes.</h2>
+<p style="margin: 16px 0 0; font-size: 18px; line-height: 1.55; max-width: 36em">The demo needs no sign-up. The Reference Application needs one Docker command.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="/demo" style="background: #161616; color: #FBFBF9; text-decoration: none; padding: 15px 24px; border-radius: 4px; font-weight: 600; min-height: 48px; display: inline-flex; align-items: center">Try the demo</a>
+<a href="get.html" style="color: #161616; text-decoration: none; padding: 14px 23px; border-radius: 4px; border: 1px solid #161616; font-weight: 500; min-height: 48px; display: inline-flex; align-items: center">Run it yourself</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #161616; color: #D9D7D0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 40px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 32px">
+<div>
+<a href="index.html" style="display: inline-block"><img src="assets/c5d0a48bf80cab2e0bd06e62befd9cf1.webp" alt="OpenMRS — Medical Record System" style="height: 44px; width: auto; display: block"></a>
+<p style="margin: 10px 0 0; font-size: 14px; line-height: 1.55; color: #B8B6AE">Write code, save lives.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8B6AE">PLATFORM</span>
+<a href="get.html" style="color: #D9D7D0">Get OpenMRS</a><a href="/releases" style="color: #D9D7D0">Releases</a><a href="/trust" style="color: #D9D7D0">Security &amp; trust</a><a href="/standards" style="color: #D9D7D0">Standards</a><a href="https://o3-docs.openmrs.org" style="color: #D9D7D0">Docs</a><a href="https://wiki.openmrs.org" style="color: #D9D7D0">Wiki</a><a href="https://github.com/openmrs" style="color: #D9D7D0">GitHub</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8B6AE">ECOSYSTEM</span>
+<a href="built-on-openmrs.html" style="color: #D9D7D0">Built on OpenMRS</a><a href="/stories" style="color: #D9D7D0">Stories</a><a href="/where" style="color: #D9D7D0">Where it's used</a><a href="/partners" style="color: #D9D7D0">Partners &amp; services</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8B6AE">COMMUNITY</span>
+<a href="/get-involved" style="color: #D9D7D0">Get involved</a><a href="https://talk.openmrs.org" style="color: #D9D7D0">Talk</a><a href="#" style="color: #D9D7D0">Slack</a><a href="/events" style="color: #D9D7D0">Events</a><a href="academy.html" style="color: #D9D7D0">Academy</a><a href="/code-of-conduct" style="color: #D9D7D0">Code of Conduct</a><a href="https://talk.openmrs.org" style="color: #D9D7D0">Job board</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8B6AE">ABOUT</span>
+<a href="about.html" style="color: #D9D7D0">About</a><a href="/impact" style="color: #D9D7D0">Impact</a><a href="/news" style="color: #D9D7D0">News</a><a href="/support" style="color: #D9D7D0">Support OpenMRS</a><a href="/press" style="color: #D9D7D0">Press &amp; brand</a><a href="/contact" style="color: #D9D7D0">Contact</a><a href="/privacy" style="color: #D9D7D0">Privacy</a><a href="/terms" style="color: #D9D7D0">Terms</a>
+</div>
+</div>
+<div style="margin: 48px 0 0; padding-top: 20px; border-top: 1px solid #333330; display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8B6AE">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px">
+<span>MPL 2.0 with Healthcare Disclaimer</span>
+<span>Verified Digital Public Good since 2023</span>
+<a href="mailto:security@openmrs.org" style="color: #B8B6AE">security@openmrs.org</a>
+<span>OpenMRS Inc. is a US 501(c)(3), EIN 45-5316647</span>
+</div>
+<label style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px">Language
+<select aria-label="Language" style="background: #161616; color: #D9D7D0; border: 1px solid #333330; border-radius: 3px; padding: 6px 8px; font-family: 'IBM Plex Mono', monospace; font-size: 12px">
+<option>English</option><option>Français</option><option>Español</option><option>Português</option>
+</select>
+</label>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

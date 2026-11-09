@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get OpenMRS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;family=Fraunces:opsz,wght,SOFT@9..144,300..600,0..100&amp;display=swap">
+<style>
+body{margin:0;min-height:100vh;background:#FBFBF9;color:#161616;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#005D5D}a:hover{color:#003F3F}
+*{box-sizing:border-box}
+h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
+</style>
+</head>
+<body>
+<div style="width: 100%; background: #FBFBF9; color: #161616; font-family: 'IBM Plex Sans', system-ui, sans-serif">
+
+<!-- NAV -->
+<header style="border-bottom: 1px solid #E2E0DA; background: #FBFBF9">
+<nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #161616">
+<img src="assets/2b52ae078be954fe4d80fdd0c72e3234.webp" alt="OpenMRS — Medical Record System" style="height: 40px; width: auto; display: block">
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 26px; font-size: 15px">
+<a href="platform.html" style="color: #161616; text-decoration: none; font-weight: 600; border-bottom: 2px solid #F26522; padding-bottom: 2px">Platform</a>
+<a href="built-on-openmrs.html" style="color: #161616; text-decoration: none">Built on OpenMRS</a>
+<a href="implementers.html" style="color: #161616; text-decoration: none">For implementers</a>
+<a href="community.html" style="color: #161616; text-decoration: none">Community</a>
+<a href="academy.html" style="color: #161616; text-decoration: none">Academy</a>
+<a href="about.html" style="color: #161616; text-decoration: none">About</a>
+<a href="https://o3-docs.openmrs.org" style="color: #161616; text-decoration: none; padding: 11px 16px; border-radius: 4px; border: 1px solid #161616; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center">Docs</a>
+<a href="/demo" style="background: #005D5D; color: #FFFFFF; text-decoration: none; padding: 11px 18px; border-radius: 4px; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center">Try the demo</a>
+</div>
+</nav>
+<div style="border-top: 1px solid #E2E0DA; background: #F7F6F1">
+<nav aria-label="Platform" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; gap: 28px; font-size: 14px">
+<a href="platform.html" style="color: #2E2E2B; text-decoration: none; padding: 14px 0; min-height: 44px; display: inline-flex; align-items: center">Overview</a>
+<a href="get.html" aria-current="page" style="color: #161616; text-decoration: none; font-weight: 600; padding: 14px 0; border-bottom: 2px solid #161616; min-height: 44px; display: inline-flex; align-items: center">Get OpenMRS</a>
+<a href="/releases" style="color: #2E2E2B; text-decoration: none; padding: 14px 0; min-height: 44px; display: inline-flex; align-items: center">Releases</a>
+<a href="/trust" style="color: #2E2E2B; text-decoration: none; padding: 14px 0; min-height: 44px; display: inline-flex; align-items: center">Security &amp; trust</a>
+<a href="/standards" style="color: #2E2E2B; text-decoration: none; padding: 14px 0; min-height: 44px; display: inline-flex; align-items: center">Standards &amp; interoperability</a>
+</nav>
+</div>
+</header>
+
+<!-- START NOW -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 56px">
+<p style="margin: 0 0 24px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A46">Get OpenMRS</p>
+<h1 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1.04; letter-spacing: -0.02em; max-width: 14em">Pick how you want to run it.</h1>
+<div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-start; justify-content: space-between">
+<p style="flex: 1 1 520px; min-width: 0; margin: 0; font-size: 20px; line-height: 1.5; color: #2E2E2B; max-width: 34em">Three ways in. Each leaves you with one command or one download. Docker is the right choice for almost everyone, including production.</p>
+<dl style="flex: 0 1 380px; min-width: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; padding: 18px 20px; border: 1px solid #E2E0DA; border-radius: 4px">
+<dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46">Current O3 release</dt><dd style="margin: 0; font-size: 15px; font-weight: 600; text-align: right">3.8.0 · 20 Oct 2026</dd>
+<dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46">Platform core</dt><dd style="margin: 0; font-size: 15px; font-weight: 600; text-align: right">2.8.10 · 5 Oct 2026</dd>
+<dd style="grid-column: 1 / -1; margin: 4px 0 0; font-size: 13px; color: #4A4A46">Versions pulled from GitHub, not typed in. <a href="/releases" style="color: #4A4A46">Release history →</a></dd>
+</dl>
+</div>
+
+<!-- chooser -->
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+
+<!-- Docker -->
+<div style="border: 2px solid #161616; border-radius: 6px; background: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #4A4A46">DOCKER</p>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; padding: 4px 8px; border-radius: 3px; background: #005D5D; color: #FFFFFF">RECOMMENDED</span>
+</div>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 30px; line-height: 1.1">The Reference Application, in minutes</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2E2E2B">Four containers: database, backend, frontend and gateway. The same images run on a laptop and on a national server.</p>
+<pre style="margin: 0; background: #071A1A; border-radius: 6px; padding: 20px; overflow-x: auto; font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.8; color: #D8E6E4"><span style="color: #6E9A97">$</span> git clone https://github.com/openmrs/openmrs-distro-referenceapplication
+<span style="color: #6E9A97">$</span> cd openmrs-distro-referenceapplication
+<span style="color: #6E9A97">$</span> docker compose up</pre>
+<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #4A4A46">Then open <span style="font-family: 'IBM Plex Mono', monospace">http://localhost/openmrs/spa</span> and log in with the demo credentials below.</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+<button type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('git clone https://github.com/openmrs/openmrs-distro-referenceapplication\ncd openmrs-distro-referenceapplication\ndocker compose up');this.lastChild.textContent='Copied';var b=this;setTimeout(function(){b.lastChild.textContent='Copy the Docker command'},2000)" style="background: #005D5D; color: #FFFFFF; border: 0; padding: 13px 20px; border-radius: 4px; font-weight: 600; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-family: inherit">
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="5" width="8" height="8" rx="1"></rect><path d="M3 11V3h8"></path></svg>Copy the Docker command</button>
+<a href="https://github.com/openmrs/openmrs-distro-referenceapplication#readme" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; font-weight: 500">Repo README →</a>
+</div>
+</div>
+
+<!-- Standalone -->
+<div id="standalone" style="border: 1px solid #161616; border-radius: 6px; background: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #4A4A46">STANDALONE · NO DOCKER</p>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 30px; line-height: 1.1">One zip, database included</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2E2E2B">O3 with MariaDB and Tomcat embedded. Unzip, run, open the browser. For laptops, training rooms and evaluation, not for production.</p>
+<ul style="margin: 0; padding: 0 0 0 18px; font-size: 15px; line-height: 1.7; color: #2E2E2B">
+<li>Needs Java 17 or newer</li>
+<li>Windows, macOS, Linux</li>
+<li>Around <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px">[SIZE]</span> to download</li>
+</ul>
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A4A46">[NEEDS INPUT — the nightly.link URL for the 3.8.0 standalone zip, or a stable redirect such as om.rs/standalone]</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+<a href="#standalone" style="background: #161616; color: #FBFBF9; text-decoration: none; padding: 13px 20px; border-radius: 4px; font-weight: 600; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; gap: 10px">
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2v9M4 7l4 4 4-4M3 13h10"></path></svg>Download O3 3.8.0 standalone</a>
+<a href="https://o3-docs.openmrs.org" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; font-weight: 500">Standalone guide →</a>
+</div>
+</div>
+
+<!-- Distribution -->
+<div style="border: 1px solid #161616; border-radius: 6px; background: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #4A4A46">A DISTRIBUTION</p>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 30px; line-height: 1.1">Start from a packaged product</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2E2E2B">Ozone HIS, Bahmni, PIH EMR and others bundle OpenMRS with their own content, integrations and support. If one fits your context, start there.</p>
+<ul style="margin: 0; padding: 0 0 0 18px; font-size: 15px; line-height: 1.7; color: #2E2E2B">
+<li>Opinionated setup and clinical content</li>
+<li>Commercial or community support options</li>
+<li>Same core, same standards, same data model</li>
+</ul>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
+<a href="built-on-openmrs.html" style="background: transparent; color: #161616; text-decoration: none; padding: 12px 19px; border-radius: 4px; border: 1px solid #161616; font-weight: 600; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center">See what's built on OpenMRS →</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEFORE YOU START -->
+<section style="background: #F1EFE9; border-top: 1px solid #E2E0DA; border-bottom: 1px solid #E2E0DA">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 360px; min-width: 0">
+<p style="margin: 0 0 20px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A46">Before you start</p>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.08; letter-spacing: -0.015em">What you'll need.</h2>
+<p style="margin: 20px 0 0; font-size: 17px; line-height: 1.55; color: #2E2E2B">Laptop numbers are for trying it out. Production numbers are the floor for a real facility; busy sites and national servers should start at the recommended column.</p>
+<a href="https://o3-docs.openmrs.org" style="margin-top: 20px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Full requirements in the docs →</a>
+</div>
+<div style="flex: 2 1 560px; min-width: 0; overflow-x: auto">
+<table style="width: 100%; min-width: 560px; border-collapse: collapse; font-size: 15px; background: #FFFFFF; border: 1px solid #CFCCC3">
+<thead>
+<tr style="border-bottom: 1px solid #161616">
+<th scope="col" style="text-align: left; padding: 14px 16px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46; font-weight: 500"></th>
+<th scope="col" style="text-align: left; padding: 14px 16px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46; font-weight: 500">Laptop / evaluation</th>
+<th scope="col" style="text-align: left; padding: 14px 16px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46; font-weight: 500">Production minimum</th>
+<th scope="col" style="text-align: left; padding: 14px 16px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46; font-weight: 500">Recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid #E2E0DA"><th scope="row" style="text-align: left; padding: 14px 16px; font-weight: 600">CPU</th><td style="padding: 14px 16px">2 cores</td><td style="padding: 14px 16px">4 cores</td><td style="padding: 14px 16px">8+ cores</td></tr>
+<tr style="border-bottom: 1px solid #E2E0DA"><th scope="row" style="text-align: left; padding: 14px 16px; font-weight: 600">Memory</th><td style="padding: 14px 16px">4 GB free</td><td style="padding: 14px 16px">8 GB</td><td style="padding: 14px 16px">16+ GB</td></tr>
+<tr style="border-bottom: 1px solid #E2E0DA"><th scope="row" style="text-align: left; padding: 14px 16px; font-weight: 600">Storage</th><td style="padding: 14px 16px">10 GB</td><td style="padding: 14px 16px">100 GB+ SSD</td><td style="padding: 14px 16px">Sized to your records, with backups</td></tr>
+<tr style="border-bottom: 1px solid #E2E0DA"><th scope="row" style="text-align: left; padding: 14px 16px; font-weight: 600">Runtime</th><td style="padding: 14px 16px" colspan="3">Docker 20.10+ and Compose 2.0+, or Java 17+ for the standalone zip</td></tr>
+<tr style="border-bottom: 1px solid #E2E0DA"><th scope="row" style="text-align: left; padding: 14px 16px; font-weight: 600">Database</th><td style="padding: 14px 16px" colspan="3">MariaDB 10.11+ or MySQL 8.0+ (included in both the Docker and standalone packages)</td></tr>
+<tr><th scope="row" style="text-align: left; padding: 14px 16px; font-weight: 600">Browser</th><td style="padding: 14px 16px" colspan="3">A current Chrome, Edge, Firefox or Safari on each workstation; O3 tolerates intermittent connections</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+<!-- GOING TO PRODUCTION -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 360px; min-width: 0">
+<p style="margin: 0 0 20px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A46">Going to production</p>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.08; letter-spacing: -0.015em">The same images, a few more decisions.</h2>
+<p style="margin: 20px 0 0; font-size: 17px; line-height: 1.55; color: #2E2E2B">The Docker setup you tried on a laptop is the one you deploy. Before patients' records go in, four things need to be true.</p>
+<a href="https://o3-docs.openmrs.org" style="margin-top: 20px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Deploy-to-production guide →</a>
+</div>
+<ol style="flex: 2 1 560px; min-width: 0; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+<li style="border-top: 2px solid #161616; padding-top: 18px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C">01</p>
+<h3 style="margin: 10px 0 0; font-size: 19px; font-weight: 600">HTTPS at the gateway</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Terminate TLS in front of the gateway container. Never serve a real deployment over plain HTTP.</p>
+</li>
+<li style="border-top: 2px solid #161616; padding-top: 18px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C">02</p>
+<h3 style="margin: 10px 0 0; font-size: 19px; font-weight: 600">Backups you have restored</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Nightly database dumps, kept off the server, and a restore you have actually rehearsed.</p>
+</li>
+<li style="border-top: 2px solid #161616; padding-top: 18px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C">03</p>
+<h3 style="margin: 10px 0 0; font-size: 19px; font-weight: 600">Changed credentials</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Replace the demo admin password and database passwords in your compose environment before go-live.</p>
+</li>
+<li style="border-top: 2px solid #161616; padding-top: 18px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C">04</p>
+<h3 style="margin: 10px 0 0; font-size: 19px; font-weight: 600">A plan for upgrades</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">O3 ships several times a year and the Platform gets monthly patches. Pin a version, test the next one on a copy, then move.</p>
+</li>
+</ol>
+</div>
+</section>
+
+<!-- PLATFORM ONLY -->
+<section style="background: #0E2A2A; color: #EEF2F1">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end; justify-content: space-between">
+<div style="flex: 1 1 520px; min-width: 0">
+<p style="margin: 0 0 20px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #9FC4C1">Need the Platform only?</p>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.08; letter-spacing: -0.015em">For module developers and distribution builders.</h2>
+</div>
+<p style="flex: 1 1 340px; margin: 0; font-size: 17px; line-height: 1.55; color: #C9D7D5">If you're building your own distribution or a backend module, you may want the core without the O3 frontend.</p>
+</div>
+<div style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px; background: #2C4A49; border: 1px solid #2C4A49">
+<div style="background: #0E2A2A; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9FC4C1">PLATFORM WAR</p>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600">openmrs.war 2.8.10</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #C9D7D5">Deploy on Tomcat with your own MariaDB or MySQL. Older lines (2.7, 2.6, 2.5) still receive patches.</p>
+<a href="/releases" style="margin-top: auto; color: #EEF2F1; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center">Download from releases →</a>
+</div>
+<div style="background: #0E2A2A; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9FC4C1">MAVEN</p>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600">Artifacts for your build</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #C9D7D5">Depend on <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px">org.openmrs.api:openmrs-api</span> and the modules you need from the OpenMRS Maven repository.</p>
+<a href="https://o3-docs.openmrs.org" style="margin-top: auto; color: #EEF2F1; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center">Backend developer guide →</a>
+</div>
+<div style="background: #0E2A2A; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9FC4C1">OPENMRS SDK</p>
+<h3 style="margin: 0; font-size: 19px; font-weight: 600">Scaffold and run modules locally</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #C9D7D5">A Maven plugin that sets up servers, creates module projects and runs them against a chosen Platform version.</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9FC4C1">[NEEDS INPUT — SDK status and current version; the old download page says 2021 and JDK 8]</p>
+<a href="https://wiki.openmrs.org" style="margin-top: auto; color: #EEF2F1; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center">SDK documentation →</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- NEED HELP -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 320px; min-width: 0">
+<p style="margin: 0 0 20px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A46">Need help?</p>
+<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 40px; line-height: 1.1; letter-spacing: -0.015em">Stuck? Someone has been here before.</h2>
+</div>
+<div style="flex: 2 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px">
+<div style="border-top: 1px solid #161616; padding-top: 18px">
+<h3 style="margin: 0; font-size: 19px; font-weight: 600">OpenMRS Talk</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Post in Ask OpenMRS. Implementers and maintainers answer; the archive answers most install questions already.</p>
+<a href="https://talk.openmrs.org" style="margin-top: 8px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Ask on Talk →</a>
+</div>
+<div style="border-top: 1px solid #161616; padding-top: 18px">
+<h3 style="margin: 0; font-size: 19px; font-weight: 600">Slack</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Real-time chat with the community. Good for a quick "is this normal?" while something is installing.</p>
+<a href="#" style="margin-top: 8px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Join Slack →</a>
+</div>
+<div style="border-top: 1px solid #161616; padding-top: 18px">
+<h3 style="margin: 0; font-size: 19px; font-weight: 600">Partners &amp; services</h3>
+<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Organisations that implement, host and support OpenMRS, by country. Contact them directly.</p>
+<a href="/partners" style="margin-top: 8px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Find a partner →</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- DEMO CREDENTIALS NOTE -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px">
+<div style="border: 1px solid #161616; border-radius: 4px; padding: 28px 32px; display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: center; justify-content: space-between; background: #FFFFFF">
+<div style="flex: 1 1 480px; min-width: 0">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46">Demo credentials</p>
+<p style="margin: 10px 0 0; font-size: 17px; line-height: 1.55">Every fresh install and the public demo log in as <span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; background: #F1EFE9; padding: 2px 8px; border-radius: 3px">admin</span> / <span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; background: #F1EFE9; padding: 2px 8px; border-radius: 3px">Admin123</span>. Change it before anything real goes in.</p>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B"><strong style="font-weight: 600">Demo servers reset daily.</strong> Never enter real patient data on them.</p>
+</div>
+<a href="/demo" style="background: #005D5D; color: #FFFFFF; text-decoration: none; padding: 14px 22px; border-radius: 4px; font-weight: 600; min-height: 48px; display: inline-flex; align-items: center; white-space: nowrap">Open the O3 demo →</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #161616; color: #D9D7D0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 40px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 32px">
+<div>
+<a href="index.html" style="display: inline-block"><img src="assets/c5d0a48bf80cab2e0bd06e62befd9cf1.webp" alt="OpenMRS — Medical Record System" style="height: 44px; width: auto; display: block"></a>
+<p style="margin: 10px 0 0; font-size: 14px; line-height: 1.55; color: #B8B6AE">Write code, save lives.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8B6AE">PLATFORM</span>
+<a href="get.html" style="color: #D9D7D0">Get OpenMRS</a><a href="/releases" style="color: #D9D7D0">Releases</a><a href="/trust" style="color: #D9D7D0">Security &amp; trust</a><a href="/standards" style="color: #D9D7D0">Standards</a><a href="https://o3-docs.openmrs.org" style="color: #D9D7D0">Docs</a><a href="https://wiki.openmrs.org" style="color: #D9D7D0">Wiki</a><a href="https://github.com/openmrs" style="color: #D9D7D0">GitHub</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8B6AE">ECOSYSTEM</span>
+<a href="built-on-openmrs.html" style="color: #D9D7D0">Built on OpenMRS</a><a href="/stories" style="color: #D9D7D0">Stories</a><a href="/where" style="color: #D9D7D0">Where it's used</a><a href="/partners" style="color: #D9D7D0">Partners &amp; services</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8B6AE">COMMUNITY</span>
+<a href="/get-involved" style="color: #D9D7D0">Get involved</a><a href="https://talk.openmrs.org" style="color: #D9D7D0">Talk</a><a href="#" style="color: #D9D7D0">Slack</a><a href="/events" style="color: #D9D7D0">Events</a><a href="academy.html" style="color: #D9D7D0">Academy</a><a href="/code-of-conduct" style="color: #D9D7D0">Code of Conduct</a><a href="https://talk.openmrs.org" style="color: #D9D7D0">Job board</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8B6AE">ABOUT</span>
+<a href="about.html" style="color: #D9D7D0">About</a><a href="/impact" style="color: #D9D7D0">Impact</a><a href="/news" style="color: #D9D7D0">News</a><a href="/support" style="color: #D9D7D0">Support OpenMRS</a><a href="/press" style="color: #D9D7D0">Press &amp; brand</a><a href="/contact" style="color: #D9D7D0">Contact</a><a href="/privacy" style="color: #D9D7D0">Privacy</a><a href="/terms" style="color: #D9D7D0">Terms</a>
+</div>
+</div>
+<div style="margin: 48px 0 0; padding-top: 20px; border-top: 1px solid #333330; display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B8B6AE">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px">
+<span>MPL 2.0 with Healthcare Disclaimer</span>
+<span>Verified Digital Public Good since 2023</span>
+<a href="mailto:security@openmrs.org" style="color: #B8B6AE">security@openmrs.org</a>
+<span>OpenMRS Inc. is a US 501(c)(3), EIN 45-5316647</span>
+</div>
+<label style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px">Language
+<select aria-label="Language" style="background: #161616; color: #D9D7D0; border: 1px solid #333330; border-radius: 3px; padding: 6px 8px; font-family: 'IBM Plex Mono', monospace; font-size: 12px">
+<option>English</option><option>Français</option><option>Español</option><option>Português</option>
+</select>
+</label>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
