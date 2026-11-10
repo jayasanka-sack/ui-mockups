@@ -16,6 +16,27 @@ h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
 <body>
 <div style="width: 100%; background: #FBFBF9; color: #161616; font-family: 'IBM Plex Sans', system-ui, sans-serif">
 
+<!-- DEMO MODAL -->
+<div id="demo-modal" hidden>
+<div role="dialog" aria-modal="true" aria-labelledby="demo-title" style="position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(22, 22, 22, 0.55)">
+<div style="position: relative; width: 100%; max-width: 520px; background: #FBFBF9; color: #161616; border-radius: 6px; border: 1px solid #161616; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<button type="button" onclick="document.getElementById('demo-modal').hidden=true" aria-label="Close" style="position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; background: none; border: 0; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; color: #4A4A46"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3l10 10M13 3L3 13"></path></svg></button>
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A46">OpenMRS 3 demo</p>
+<h2 id="demo-title" style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 32px; line-height: 1.1; letter-spacing: -0.01em">Log in with the demo account.</h2>
+<dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 10px 20px; padding: 16px 20px; border: 1px solid #E2E0DA; border-radius: 4px; background: #FFFFFF; font-size: 16px; align-items: center">
+<dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46">Username</dt><dd style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 17px; font-weight: 500">admin</dd>
+<dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #4A4A46">Password</dt><dd style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 17px; font-weight: 500">Admin123</dd>
+</dl>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #2E2E2B"><strong style="font-weight: 600">The demo resets every 24 hours.</strong> Anything you enter disappears; never enter real patient data.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+<a href="https://o3.openmrs.org" target="_blank" rel="noopener" onclick="document.getElementById('demo-modal').hidden=true" style="background: #005D5D; color: #FFFFFF; text-decoration: none; padding: 14px 22px; border-radius: 4px; font-weight: 600; font-size: 16px; min-height: 48px; display: inline-flex; align-items: center; gap: 10px">Open o3.openmrs.org <svg aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h7v7M13 3L6 10M11 13H3V5"></path></svg></a>
+<button type="button" onclick="document.getElementById('demo-modal').hidden=true" style="background: none; border: 0; color: #161616; font-size: 15px; font-weight: 500; min-height: 44px; padding: 0 8px; cursor: pointer; font-family: inherit">Not now</button>
+</div>
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A4A46">Opens in a new tab. Want it on your own machine instead? <a href="get.html">Get OpenMRS →</a></p>
+</div>
+</div>
+</div>
+
 <!-- NAV -->
 <header style="border-bottom: 1px solid #E2E0DA; background: #FBFBF9">
 <nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
@@ -30,7 +51,7 @@ h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
 <a href="academy.html" style="color: #161616; text-decoration: none">Academy</a>
 <a href="about.html" style="color: #161616; text-decoration: none">About</a>
 <a href="https://o3-docs.openmrs.org" style="color: #161616; text-decoration: none; padding: 11px 16px; border-radius: 4px; border: 1px solid #161616; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center">Docs</a>
-<a href="/demo" style="background: #005D5D; color: #FFFFFF; text-decoration: none; padding: 11px 18px; border-radius: 4px; font-weight: 500; min-height: 44px; display: inline-flex; align-items: center">Try the demo</a>
+<button type="button" onclick="document.getElementById('demo-modal').hidden=false" style="background: #005D5D; color: #FFFFFF; border: 0; padding: 11px 18px; border-radius: 4px; font-weight: 500; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; cursor: pointer; font-family: inherit">Try the demo</button>
 </div>
 </nav>
 </header>
@@ -43,8 +64,8 @@ h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
 <h1 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 76px; line-height: 1.02; letter-spacing: -0.02em">From one clinic to a whole country.</h1>
 <p style="margin: 32px 0 0; font-size: 21px; line-height: 1.5; color: #2E2E2B; max-width: 34em">OpenMRS is the open-source medical record platform that clinics, NGOs and ministries of health build on. Free to use, yours to change, maintained by a global community since 2004.</p>
 <div style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 14px">
-<a href="/demo" style="background: #005D5D; color: #FFFFFF; text-decoration: none; padding: 15px 24px; border-radius: 4px; font-weight: 600; font-size: 16px; min-height: 48px; display: inline-flex; align-items: center; gap: 10px">Try the demo
-<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+<button type="button" onclick="document.getElementById('demo-modal').hidden=false" style="background: #005D5D; color: #FFFFFF; border: 0; padding: 15px 24px; border-radius: 4px; font-weight: 600; font-size: 16px; min-height: 48px; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-family: inherit">Try the demo
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></button>
 <a href="get.html" style="background: transparent; color: #161616; text-decoration: none; padding: 14px 23px; border-radius: 4px; border: 1px solid #161616; font-weight: 500; font-size: 16px; min-height: 48px; display: inline-flex; align-items: center">Run it yourself</a>
 </div>
 </div>
@@ -233,7 +254,7 @@ h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
 <p style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: 26px; line-height: 1.3; letter-spacing: -0.01em; color: #4A4A46">“[OPTIONAL — a named, cleared quote from the KenyaEMR team. NEEDS INPUT: Palladium Kenya. Delete this block if none is cleared; the section works without it.]”</p>
 <footer style="margin-top: 16px; font-size: 15px; color: #4A4A46"><strong style="font-weight: 600">[Name]</strong> — [Role], [Organisation] · [Date]</footer>
 </blockquote>
-<a href="/stories/kenyaemr-3" style="margin-top: 28px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Read the full story →</a>
+<a href="https://openmrs.org/kenyaemr-o3-success-story/" style="margin-top: 28px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Read the full story →</a>
 </div>
 </div>
 
@@ -260,7 +281,7 @@ h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
 <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C; display: flex; justify-content: space-between; gap: 8px"><span>Step 1</span><span style="color: #4A4A46">5 minutes</span></p>
 <h3 style="margin: 10px 0 0; font-size: 20px; font-weight: 600">See it</h3>
 <p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Open the live demo. Log in as <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px">admin / Admin123</span>. It resets daily; never enter real patient data.</p>
-<a href="/demo" style="margin-top: auto; padding-top: 12px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Open the demo →</a>
+<button type="button" onclick="document.getElementById('demo-modal').hidden=false" style="margin-top: auto; padding-top: 12px; background: none; border: 0; padding-left: 0; padding-right: 0; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #005D5D; cursor: pointer; font-family: inherit">Open the demo →</button>
 </li>
 <li style="border-top: 2px solid #161616; padding-top: 20px; display: flex; flex-direction: column">
 <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C; display: flex; justify-content: space-between; gap: 8px"><span>Step 2</span><span style="color: #4A4A46">One command</span></p>
@@ -284,7 +305,7 @@ h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
 </section>
 
 <!-- COMMONS BAND -->
-<section id="support" style="background: #F26522; color: #161616">
+<section id="support" style="background: #EEA515; color: #161616">
 <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between">
 <div style="flex: 1 1 560px; min-width: 0">
 <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 40px; line-height: 1.12; letter-spacing: -0.01em">Infrastructure like this is shared. Help keep it that way.</h2>
