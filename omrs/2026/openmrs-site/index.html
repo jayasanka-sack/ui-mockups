@@ -138,7 +138,7 @@ h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
 <img src="assets/314b7c14517e2c0cf265f1265fe4d170.webp" alt="OpenMRS 3 patient chart: patient header, vitals and biometrics summary, vitals and biometrics tables, conditions and active medications, shown for a demo patient" style="width: 100%; height: auto; display: block">
 </div>
 <div style="border: 1px solid #2C4A49; border-radius: 6px; background: #132F2F; height: 200px; overflow: hidden"><img src="assets/54ec93c1a2095fef9d4291690ed3e9d9.webp" alt="OpenMRS 3 clinical form: a PHQ-2 mental health screening with a date field and radio-button questions, shown for a demo patient" style="width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block"></div>
-<div style="border: 1px solid #2C4A49; border-radius: 6px; background: #132F2F; height: 200px; display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9FC4C1">[SCREENSHOT 3 — service queues]</span></div>
+<div style="border: 1px solid #2C4A49; border-radius: 6px; background: #132F2F; height: 200px; overflow: hidden"><img src="assets/6f333bf7c78ecff65fd28a52ac7f6c9b.webp" alt="OpenMRS 3 service queues: patients in service and a waiting list with priority, queue and wait time, on demo data" style="width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block"></div>
 <div style="border: 1px solid #2C4A49; border-radius: 6px; background: #132F2F; height: 200px; display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9FC4C1">[SCREENSHOT 4 — appointments]</span></div>
 </div>
 
@@ -166,16 +166,16 @@ h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
 </div>
 </div>
 
-<!-- terminal -->
-<div style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center">
-<div style="flex: 1 1 300px; min-width: 0">
+<!-- run it -->
+<div style="margin-top: 56px; padding-top: 40px; border-top: 1px solid #2C4A49; display: flex; flex-wrap: wrap; gap: 32px 48px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 480px; min-width: 0">
 <h3 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 30px">Run it on your laptop in minutes.</h3>
-<p style="margin: 12px 0 0; font-size: 16px; line-height: 1.55; color: #C9D7D5">The full Reference Application, with Docker. <a href="/get" style="color: #EEF2F1">Read the setup guide →</a></p>
-<p style="margin: 12px 0 0; font-size: 14px; line-height: 1.55; color: #9FC4C1">No Docker? There's a <a href="/get" style="color: rgb(201, 215, 213)">standalone zip</a>, or start from <a href="/built-on-openmrs" style="color: rgb(201, 215, 213)">a distribution</a>.</p>
+<p style="margin: 12px 0 0; font-size: 16px; line-height: 1.55; color: #C9D7D5">One command with Docker, or a standalone download. Not ready to install? <a href="academy.html" style="color: #EEF2F1">OpenMRS Fundamentals</a> is a free 8-hour course that walks you through the whole system first.</p>
 </div>
-<pre style="flex: 2 1 520px; min-width: 0; margin: 0; background: #071A1A; border: 1px solid #2C4A49; border-radius: 6px; padding: 24px; overflow-x: auto; font-family: 'IBM Plex Mono', monospace; font-size: 14px; line-height: 1.8; color: #D8E6E4"><span style="color: #6E9A97">$</span> git clone https://github.com/openmrs/openmrs-distro-referenceapplication
-<span style="color: #6E9A97">$</span> cd openmrs-distro-referenceapplication
-<span style="color: #6E9A97">$</span> docker compose up</pre>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="get.html" style="background: #FBFBF9; color: #161616; text-decoration: none; padding: 14px 22px; border-radius: 4px; font-weight: 600; font-size: 16px; min-height: 48px; display: inline-flex; align-items: center; gap: 10px">Get OpenMRS <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+<a href="academy.html" style="color: #EEF2F1; text-decoration: none; padding: 13px 21px; border-radius: 4px; border: 1px solid #9FC4C1; font-weight: 500; font-size: 16px; min-height: 48px; display: inline-flex; align-items: center">Start with the course</a>
+</div>
 </div>
 </div>
 </section>
@@ -269,37 +269,6 @@ h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
 <p style="margin: 16px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4A4A46">Only partners who have given written permission appear here. <a href="/partners" style="color: #4A4A46">All partners and services →</a></p>
 </div>
 </div>
-</section>
-
-<!-- PATH IN -->
-<section style="max-width: 1200px; margin: 0 auto; padding: 104px 24px">
-<h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.1; letter-spacing: -0.015em">Four steps from curious to running.</h2>
-<ol style="list-style: none; margin: 48px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 24px">
-<li style="border-top: 2px solid #161616; padding-top: 20px; display: flex; flex-direction: column">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C; display: flex; justify-content: space-between; gap: 8px"><span>Step 1</span><span style="color: #4A4A46">5 minutes</span></p>
-<h3 style="margin: 10px 0 0; font-size: 20px; font-weight: 600">See it</h3>
-<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Open the live demo. Log in as <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px">admin / Admin123</span>. It resets daily; never enter real patient data.</p>
-<button type="button" onclick="document.getElementById('demo-modal').hidden=false" style="margin-top: auto; padding-top: 12px; background: none; border: 0; padding-left: 0; padding-right: 0; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; font-size: 15px; color: #005D5D; cursor: pointer; font-family: inherit">Open the demo →</button>
-</li>
-<li style="border-top: 2px solid #161616; padding-top: 20px; display: flex; flex-direction: column">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C; display: flex; justify-content: space-between; gap: 8px"><span>Step 2</span><span style="color: #4A4A46">One command</span></p>
-<h3 style="margin: 10px 0 0; font-size: 20px; font-weight: 600">Run it</h3>
-<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Spin up the Reference Application with Docker, or download the standalone zip.</p>
-<a href="get.html" style="margin-top: auto; padding-top: 12px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Get OpenMRS →</a>
-</li>
-<li style="border-top: 2px solid #161616; padding-top: 20px; display: flex; flex-direction: column">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C; display: flex; justify-content: space-between; gap: 8px"><span>Step 3</span><span style="color: #4A4A46">8 hours · free</span></p>
-<h3 style="margin: 10px 0 0; font-size: 20px; font-weight: 600">Learn it</h3>
-<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Take OpenMRS Fundamentals on the Academy, then the course for your role.</p>
-<a href="academy.html" style="margin-top: auto; padding-top: 12px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Start Fundamentals →</a>
-</li>
-<li style="border-top: 2px solid #161616; padding-top: 20px; display: flex; flex-direction: column">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B4430C; display: flex; justify-content: space-between; gap: 8px"><span>Step 4</span><span style="color: #4A4A46">Any time</span></p>
-<h3 style="margin: 10px 0 0; font-size: 20px; font-weight: 600">Ask</h3>
-<p style="margin: 8px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Post on Talk, where implementers and maintainers answer.</p>
-<a href="https://talk.openmrs.org" style="margin-top: auto; padding-top: 12px; display: inline-flex; align-items: center; min-height: 44px; font-weight: 500">Join OpenMRS Talk →</a>
-</li>
-</ol>
 </section>
 
 <!-- CONTRIBUTE -->
