@@ -129,17 +129,27 @@ h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
 
 <!-- screenshots: one large, three small (four max) -->
 <div style="margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
-<div style="grid-column: 1 / -1; border: 1px solid #2C4A49; border-radius: 6px; overflow: hidden; background: #132F2F">
+<figure style="margin: 0; grid-column: 1 / -1; border: 1px solid #2C4A49; border-radius: 6px; overflow: hidden; background: #132F2F">
 <div style="height: 36px; border-bottom: 1px solid #2C4A49; display: flex; align-items: center; gap: 8px; padding: 0 14px">
 <span style="width: 10px; height: 10px; border-radius: 50%; background: #2C4A49"></span>
 <span style="width: 10px; height: 10px; border-radius: 50%; background: #2C4A49"></span>
 <span style="width: 10px; height: 10px; border-radius: 50%; background: #2C4A49"></span>
 </div>
 <img src="assets/314b7c14517e2c0cf265f1265fe4d170.webp" alt="OpenMRS 3 patient chart: patient header, vitals and biometrics summary, vitals and biometrics tables, conditions and active medications, shown for a demo patient" style="width: 100%; height: auto; display: block">
-</div>
-<div style="border: 1px solid #2C4A49; border-radius: 6px; background: #132F2F; height: 200px; overflow: hidden"><img src="assets/54ec93c1a2095fef9d4291690ed3e9d9.webp" alt="OpenMRS 3 clinical form: a PHQ-2 mental health screening with a date field and radio-button questions, shown for a demo patient" style="width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block"></div>
-<div style="border: 1px solid #2C4A49; border-radius: 6px; background: #132F2F; height: 200px; overflow: hidden"><img src="assets/6f333bf7c78ecff65fd28a52ac7f6c9b.webp" alt="OpenMRS 3 service queues: patients in service and a waiting list with priority, queue and wait time, on demo data" style="width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block"></div>
-<div style="border: 1px solid #2C4A49; border-radius: 6px; background: #132F2F; height: 200px; display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9FC4C1">[SCREENSHOT 4 — appointments]</span></div>
+<figcaption style="padding: 12px 16px; border-top: 1px solid #2C4A49; font-size: 14px; color: #C9D7D5">Patient chart: one place for visits, vitals, conditions, medications and results.</figcaption>
+</figure>
+<figure style="margin: 0; border: 1px solid #2C4A49; border-radius: 6px; overflow: hidden; background: #132F2F">
+<div style="height: 200px; overflow: hidden"><img src="assets/54ec93c1a2095fef9d4291690ed3e9d9.webp" alt="OpenMRS 3 clinical form: a PHQ-2 mental health screening with a date field and radio-button questions, shown for a demo patient" style="width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block"></div>
+<figcaption style="padding: 12px 16px; border-top: 1px solid #2C4A49; font-size: 14px; color: #C9D7D5">Forms: built in the Form Builder, no code.</figcaption>
+</figure>
+<figure style="margin: 0; border: 1px solid #2C4A49; border-radius: 6px; overflow: hidden; background: #132F2F">
+<div style="height: 200px; overflow: hidden"><img src="assets/6f333bf7c78ecff65fd28a52ac7f6c9b.webp" alt="OpenMRS 3 service queues: patients in service and a waiting list with priority, queue and wait time, on demo data" style="width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block"></div>
+<figcaption style="padding: 12px 16px; border-top: 1px solid #2C4A49; font-size: 14px; color: #C9D7D5">Queues: who is waiting, where, for how long.</figcaption>
+</figure>
+<figure style="margin: 0; border: 1px solid #2C4A49; border-radius: 6px; overflow: hidden; background: #132F2F">
+<div style="height: 200px; display: flex; align-items: center; justify-content: center; padding: 16px; text-align: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #9FC4C1">[SCREENSHOT 4 — appointments]</span></div>
+<figcaption style="padding: 12px 16px; border-top: 1px solid #2C4A49; font-size: 14px; color: #C9D7D5">Appointments: scheduling and follow-up per service.</figcaption>
+</figure>
 </div>
 
 <!-- capabilities -->
@@ -277,7 +287,7 @@ h1,h2,h3,dd,blockquote p{font-variation-settings:'SOFT' 50}
 <div style="flex: 1 1 320px; min-width: 0">
 <p style="margin: 0 0 14px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #4A4A46">Want to contribute?</p>
 <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 1.12; letter-spacing: -0.01em">You don't need permission. You need a first task.</h2>
-<p style="margin: 14px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Everything is in the open: the code, the design files, the docs, the release testing. Pick the kind of work you like, do one small thing, and someone will review it. Students: OpenMRS has run Google Summer of Code every year since 2007.</p>
+<p style="margin: 14px 0 0; font-size: 15px; line-height: 1.55; color: #2E2E2B">Everything is in the open: the code, the design files, the docs, the release testing. Pick the kind of work you like, do one small thing, and someone will review it.<br></p>
 <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 12px">
 <a href="https://talk.openmrs.org" style="background: #161616; color: #FBFBF9; text-decoration: none; padding: 12px 20px; border-radius: 4px; font-weight: 600; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center">Say hello on Talk</a>
 <a href="community.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; font-weight: 500">All the ways in →</a>
